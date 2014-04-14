@@ -1,6 +1,8 @@
 workshop
 ========
 c'est un petit sandbox contenant :
+
+
 *sonataAdminBundle
 
 
@@ -14,12 +16,16 @@ c'est un petit sandbox contenant :
 
 
 vous n'avez qu'a suivre les étapes suivantes:
+
+
 1- télécharger une copie du projet
 
 
 <code> git clone https://github.com/fatmah/workshop.git </code>
 
 cd workshop
+
+
 2-télécharger le composer
 
 
@@ -56,6 +62,7 @@ vous avez maintenant un dashboard rendez vous sur
 
 
  http://localhost/workshop/web/app_dev.php/admin/dashboard
+
 
 
 
