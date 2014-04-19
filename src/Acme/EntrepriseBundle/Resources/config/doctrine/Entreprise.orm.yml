@@ -1,0 +1,22 @@
+Acme\EntrepriseBundle\Entity\Entreprise:
+    type: entity
+    table: entreprise
+    id:
+        id:
+            type: integer
+            generator: {strategy: AUTO}
+                
+    fields:
+        nom:
+            type: string
+            length: 100
+        description:
+            type: text
+    oneToOne:
+        logo:
+            targetEntity: Application\Sonata\MediaBundle\Entity\Media
+            joinColumn:
+                name: logo
+                referencedColumnName: id
+            cascade: ["persist", "merge"]
+    
