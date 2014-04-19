@@ -1,6 +1,7 @@
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
+    - { resource: admin.yml }
 
 framework:
     #esi:             ~
@@ -59,9 +60,10 @@ doctrine:
         # path:     "%database_path%"
 
     orm:
-        auto_generate_proxy_classes: "%kernel.debug%"
+        auto_generate_proxy_classes: "%kernel.debug%"      
         entity_managers:
             default:
+                auto_mapping: true
                 mappings:
                     ApplicationSonataUserBundle: ~
                     SonataUserBundle: ~
@@ -85,6 +87,8 @@ sonata_block:
             contexts:   [admin]
         sonata.user.block.menu:    # used to display the menu in profile pages
         sonata.user.block.account:
+        sonata.block.service.text:
+        sonata.block.service.rss:
 
 fos_user:
     db_driver:      orm # can be orm or odm
@@ -119,7 +123,7 @@ sonata_media:
 
     cdn:
         server:
-            path: /uploads/media 
+            path: /workshop/web/uploads/media 
 
     filesystem:
         local:
