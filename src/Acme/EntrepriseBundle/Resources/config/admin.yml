@@ -1,6 +1,0 @@
-services:
-    admin.entreprise:
-        class: Acme\EntrepriseBundle\Admin\EntrepriseAdmin
-        arguments: [~, Acme\EntrepriseBundle\Entity\Entreprise, AcmeEntrepriseBundle:EntrepriseAdmin]
-        tags:
-            - {name: sonata.admin, manager_type: orm, group: acme.admin.group.entreprise, label: Entreprise}

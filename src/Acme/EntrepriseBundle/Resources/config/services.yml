@@ -1,3 +1,5 @@
+#imports: 
+#    - { resource: admin.yml }
 parameters:
 #    acme_entreprise.example.class: Acme\EntrepriseBundle\Example
 
