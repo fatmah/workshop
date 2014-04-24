@@ -51,7 +51,16 @@ cd workshop
 
 <code> php app/console doctrine:schema:update --force </code>
 
-7-créez un admin
+7-créez un dossier pour sauvgarder les médias
+
+<code> mkdir web/uploads</code>
+
+<code> mkdir web/uploads/media</code>
+
+<code> chmod 777 -R web/uploads</code>
+
+
+8-créez un admin
 
 
 <code> php app/console fos:user:create admin --super-admin </code>
