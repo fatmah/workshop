@@ -49,6 +49,7 @@ class EntrepriseAdmin extends Admin
             ->add('nom')
             ->add('description')
             ->add('logo','sonata_media_type',array('provider'=>'sonata.media.provider.image'))
+            
         ;
     }
 
