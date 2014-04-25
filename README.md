@@ -53,11 +53,11 @@ cd workshop
 
 7-créez un dossier pour sauvgarder les médias
 
-<code> mkdir web/uploads</code>
+<code> mkdir web\uploads</code>
 
-<code> mkdir web/uploads/media</code>
+<code> mkdir web\uploads\media</code>
 
-<code> chmod 777 -R web/uploads</code>
+<code> chmod 777 -R web\uploads</code>
 
 
 8-créez un admin
