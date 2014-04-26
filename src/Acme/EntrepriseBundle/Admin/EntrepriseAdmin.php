@@ -31,6 +31,7 @@ class EntrepriseAdmin extends Admin
             ->add('id')
             ->add('nom')
             ->add('description')
+            ->add('logo',null,array('template'=>"AcmeEntrepriseBundle:Entreprise:logo.html.twig"))
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'show' => array(),
@@ -50,6 +51,8 @@ class EntrepriseAdmin extends Admin
             ->add('id')
             ->add('nom')
             ->add('description')
+            ->add('logo','sonata_media_type',array('provider'=>'sonata.media.provider.image'))
+
         ;
     }
 
