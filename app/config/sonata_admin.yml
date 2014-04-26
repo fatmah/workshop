@@ -1,9 +1,0 @@
-sonata_admin:
-    dashboard:
-        groups:
-            acme.admin.group.entreprise:
-                label: Entreprise
-                items:
-                    -  acme_entreprise.admin.entreprise
-            sonata_user: ~
-            sonata_media: ~ 
