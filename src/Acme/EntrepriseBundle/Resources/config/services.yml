@@ -1,5 +1,3 @@
-#imports: 
-#    - { resource: admin.yml }
 parameters:
 #    acme_entreprise.example.class: Acme\EntrepriseBundle\Example
 
@@ -7,3 +5,8 @@ services:
 #    acme_entreprise.example:
 #        class: %acme_entreprise.example.class%
 #        arguments: [@service_id, "plain_value", %parameter%]
+    acme_entreprise.admin.entreprise:
+        class: Acme\EntrepriseBundle\Admin\EntrepriseAdmin
+        arguments: [~, Acme\EntrepriseBundle\Entity\Entreprise, AcmeEntrepriseBundle:EntrepriseAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Entreprise}
