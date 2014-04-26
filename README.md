@@ -73,5 +73,10 @@ vous avez maintenant un dashboard rendez vous sur
  http://localhost/workshop/web/app_dev.php/admin/dashboard
 
 
+l'admin pour l'entité entreprise existe déja la commande que j'ai utilsée est:
+
+
+<code>php app\console sonata:admin:generate Acme\EntrepriseBundle\Entity\Entreprise </code>
+
 
 
