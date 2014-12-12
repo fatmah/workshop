@@ -12,9 +12,6 @@ c'est un petit sandbox contenant :
 *sonataUserBundle
 
 
-*sonataMediaBundle
-
-
 vous n'avez qu'a suivre les étapes suivantes:
 
 
@@ -31,36 +28,23 @@ cd workshop
 
 <code> curl -s https://getcomposer.org/installer | php </code>
 
-3- <code>cd app/config </code>
 
-
-éditez parameters.yml
-
-4- installez les dépendances
+3- installez les dépendances
 
 
 <code> php composer.phar install </code>
 
-5-créez la base de donnée
+4-créez la base de donnée
 
 
  <code> php app/console doctrine:database:create </code>
 
-6-créez le shéma de la base
+5-créez le shéma de la base
 
 
 <code> php app/console doctrine:schema:update --force </code>
 
-7-créez un dossier pour sauvgarder les médias
-
-<code> mkdir web\uploads</code>
-
-<code> mkdir web\uploads\media</code>
-
-<code> chmod 777 -R web\uploads</code>
-
-
-8-créez un admin
+6-créez un admin
 
 
 <code> php app/console fos:user:create admin --super-admin </code>
