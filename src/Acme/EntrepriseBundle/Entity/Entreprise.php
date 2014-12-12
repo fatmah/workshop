@@ -19,11 +19,6 @@ class Entreprise {
     private $description;
 
     /**
-     * @var \Application\Sonata\MediaBundle\Entity\Media
-     */
-    private $logo;
-
-    /**
      * Get id
      *
      * @return integer 
@@ -79,28 +74,6 @@ class Entreprise {
         return $this->description;
     }
 
-    /**
-     * Set logo
-     *
-     * @param \Application\Sonata\MediaBundle\Entity\Media $logo
-     * @return Entreprise
-     */
-    public function setLogo(\Application\Sonata\MediaBundle\Entity\Media $logo = null)
-    {
-        $this->logo = $logo;
-
-        return $this;
-    }
-
-    /**
-     * Get logo
-     *
-     * @return \Application\Sonata\MediaBundle\Entity\Media 
-     */
-    public function getLogo()
-    {
-        return $this->logo;
-    }
     public function __toString() {
         return (string) $this->getNom();
     }
