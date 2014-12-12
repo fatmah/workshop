@@ -34,17 +34,21 @@ cd workshop
 
 <code> php composer.phar install </code>
 
-4-créez la base de donnée
+4- <code>cd app/config </code>
+   éditez parameters.yml
+
+
+5-créez la base de donnée
 
 
  <code> php app/console doctrine:database:create </code>
 
-5-créez le shéma de la base
+6-créez le shéma de la base
 
 
 <code> php app/console doctrine:schema:update --force </code>
 
-6-créez un admin
+7-créez un admin
 
 
 <code> php app/console fos:user:create admin --super-admin </code>
