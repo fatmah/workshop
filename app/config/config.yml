@@ -64,10 +64,10 @@ doctrine:
         entity_managers:
             default:
                 auto_mapping: true
-                mappings:
-                    ApplicationSonataUserBundle: ~
-                    SonataUserBundle: ~
-                    FOSUserBundle: ~
+ #               mappings:
+ #                   ApplicationSonataUserBundle: ~
+  #                  SonataUserBundle: ~
+  #                  FOSUserBundle: ~
 
 
 # Swiftmailer Configuration
